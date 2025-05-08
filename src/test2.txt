@@ -1,0 +1,33 @@
+{ocrData=[
+    {ocrColIdx=1, imageId=xxxyyy.txt, ocrCol=1, docType=SGI0003, ocrOrgVal=법원, imagePage=1, ocrColCnt=1, ocrCoord=785,133,838,166,200,200},
+    {ocrColIdx=1, imageId=xxxyyy.txt, ocrCol=2, docType=SGI0003, ocrOrgVal=2024개회268258, imagePage=1, ocrColCnt=1, ocrCoord=477,536,726,572,200,200},
+    {ocrColIdx=1, imageId=xxxyyy.txt, ocrCol=3, docType=SGI0003, ocrOrgVal=이담은, imagePage=1, ocrColCnt=1, ocrCoord=479,606,579,643,200,200},
+    {ocrColIdx=1, imageId=xxxyyy.txt, ocrCol=4, docType=SGI0003, ocrOrgVal=910415-2685457, imagePage=1, ocrColCnt=1, ocrCoord=594,606,873,639,200,200},
+    {ocrColIdx=1, imageId=xxxyyy.txt, ocrCol=5, docType=SGI0003, ocrOrgVal=대한민국법원 코드, imagePage=1, ocrColCnt=1, ocrCoord=1415,231,1575,252,200,200},
+    {ocrColIdx=1, imageId=xxxyyy.txt, ocrCol=6, docType=SGI0003, ocrOrgVal=경북 성주군 초전면 대장길 119-3, 101동 605호(대장리, 초전아 파트) , imagePage=1, ocrColCnt=1, ocrCoord=480,670,1483,778,200,200},
+    {ocrColIdx=1, imageId=xxxyyy.txt, ocrCol=8, docType=SGI0003, ocrOrgVal=2025-04-17, imagePage=1, ocrColCnt=1, ocrCoord=729,1623,916,1653,200,200}],
+statusData=
+    {resTime=0, err500Cnt=0, succCnt=7, docrecResTime=0, colCnt=7, stsCd=1, err400Cnt=0, resDttm=2025-05-08 23:06:13, docrecResDttm=2025-05-08 23:06:13, reqDttm=2025-05-08 23:06:13, docrecReqDttm=2025-05-08 23:06:13}}
+
+
+{ocrData=[
+    {ocrColIdx=1, imageId=xxxyyy.txt, ocrCol=1, docType=SGI0003, ocrOrgVal=법원, imagePage=1, ocrColCnt=1, ocrCoord=785,133,838,166,200,200},
+    {ocrColIdx=1, imageId=xxxyyy.txt, ocrCol=2, docType=SGI0003, ocrOrgVal=2024개회268258, imagePage=1, ocrColCnt=1, ocrCoord=477,536,726,572,200,200},
+    {ocrColIdx=1, imageId=xxxyyy.txt, ocrCol=3, docType=SGI0003, ocrOrgVal=이담은, imagePage=1, ocrColCnt=1, ocrCoord=479,606,579,643,200,200},
+    {ocrColIdx=1, imageId=xxxyyy.txt, ocrCol=4, docType=SGI0003, ocrOrgVal=910415-2685457, imagePage=1, ocrColCnt=1, ocrCoord=594,606,873,639,200,200},
+    {ocrColIdx=1, imageId=xxxyyy.txt, ocrCol=5, docType=SGI0003, ocrOrgVal=대한민국법원 코드, imagePage=1, ocrColCnt=1, ocrCoord=1415,231,1575,252,200,200},
+    {ocrColIdx=1, imageId=xxxyyy.txt, ocrCol=6, docType=SGI0003, ocrOrgVal=경북 성주군 초전면 대장길 119-3, 101동 605호(대장리, 초전아 파트) , imagePage=1, ocrColCnt=1, ocrCoord=480,670,1483,778,200,200},
+    {ocrColIdx=1, imageId=xxxyyy.txt, ocrCol=8, docType=SGI0003, ocrOrgVal=2025-04-17, imagePage=1, ocrColCnt=1, ocrCoord=729,1623,916,1653,200,200}],
+statusData={resTime=0, err500Cnt=0, succCnt=6, docrecResTime=0, colCnt=6, stsCd=1, err400Cnt=0, resDttm=2025-05-08 23:08:20, docrecResDttm=2025-05-08 23:08:20, reqDttm=2025-05-08 23:08:20, docrecReqDttm=2025-05-08 23:08:20}}
+
+
+{ocrData=[
+    {ocrColIdx=1, imageId=xxxyyy.txt, ocrCol=1, docType=SGI0003, ocrOrgVal=법원, imagePage=1, ocrColCnt=1, ocrCoord=785,133,838,166,200,200},
+    {ocrColIdx=1, imageId=xxxyyy.txt, ocrCol=2, docType=SGI0003, ocrOrgVal=2024개회268258, imagePage=1, ocrColCnt=1, ocrCoord=477,536,726,572,200,200},
+    {ocrColIdx=1, imageId=xxxyyy.txt, ocrCol=3, docType=SGI0003, ocrOrgVal=이담은, imagePage=1, ocrColCnt=1, ocrCoord=479,606,579,643,200,200},
+    {ocrColIdx=1, imageId=xxxyyy.txt, ocrCol=4, docType=SGI0003, ocrOrgVal=910415-2685457, imagePage=1, ocrColCnt=1, ocrCoord=594,606,873,639,200,200},
+    {ocrColIdx=1, imageId=xxxyyy.txt, ocrCol=5, docType=SGI0003, ocrOrgVal=대한민국법원 코드, imagePage=1, ocrColCnt=1, ocrCoord=1415,231,1575,252,200,200},
+    {ocrColIdx=1, imageId=xxxyyy.txt, ocrCol=6, docType=SGI0003, ocrOrgVal=경북 성주군 초전면 대장길 119-3, 101동 605호(대장리, 초전아 파트) , imagePage=1, ocrColCnt=1, ocrCoord=480,670,1483,778,200,200},
+    {ocrColIdx=1, imageId=xxxyyy.txt, ocrCol=8, docType=SGI0003, ocrOrgVal=2025-04-17, imagePage=1, ocrColCnt=1, ocrCoord=729,1623,916,1653,200,200}],
+statusData=
+    {resTime=0, err500Cnt=0, succCnt=7, docrecResTime=0, colCnt=7, stsCd=1, err400Cnt=0, resDttm=2025-05-08 23:15:38, docrecResDttm=2025-05-08 23:15:38, reqDttm=2025-05-08 23:15:38, docrecReqDttm=2025-05-08 23:15:38}}

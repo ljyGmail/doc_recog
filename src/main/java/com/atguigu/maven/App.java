@@ -2986,7 +2986,7 @@ public class App {
                                         } else {
                                             // 개인회생문서 첫페이지 (SGI0003) 7번째 항목 지원, 지법 처리
                                             // 담보제공명령(SGI0052) 14번째항목  지원, 지법 처리 추가 ->  -> 담보제공명령은 제외하고 인식기능 분리됨
-                                            if (!("SGI0003".equals(stridCode) && (itemcnt == 7 || itemcnt == 8))) {
+                                            if (!("SGI0003".equals(stridCode) && itemcnt == 7)) {
                                                 nRegocCnt++;
                                             }
 
@@ -3021,7 +3021,7 @@ public class App {
 
                                         // 개인회생문서 첫페이지 (SGI0003) 7번째 항목 지원, 지법 처리
                                         // 담보제공명령(SGI0052) 14번째항목  지원, 지법 처리 추가 -> 담보제공명령은 제외하고 인식기능 분리됨
-                                        if (("SGI0003".equals(stridCode) && (itemcnt == 7 || itemcnt == 8))) {
+                                        if (("SGI0003".equals(stridCode) && itemcnt == 7)) {
                                             if ("".equals(tmpVal)) {
                                                 continue;
                                             }
@@ -3073,6 +3073,12 @@ public class App {
                                                     if (tmpVal.endsWith(")")) {
                                                         tmpVal = tmpVal.substring(0, tmpVal.length() - 1);
                                                     }
+                                                }
+                                            }
+
+                                            if ("SGI0003".equals(stridCode) && itemcnt == 8) {
+                                                if ("".equals(tmpVal)) {
+                                                    continue;
                                                 }
                                             }
 
