@@ -168,3 +168,199 @@
 16:26:03.909 [main] PID_IS_UNDEFINED [INFO ] [com.atguigu.maven.App] - [reqDocRead] TotalPages : 23
 16:26:04.337 [main] PID_IS_UNDEFINED [INFO ] [com.atguigu.maven.App] - ########## docregog 인식값처리 loop end ##########
 16:26:04.337 [main] PID_IS_UNDEFINED [INFO ] [com.atguigu.maven.App] - ########## reqDocRead end ##########
+16:38:22.695 [main] PID_IS_UNDEFINED [INFO ] [com.atguigu.maven.App] - ########## reqDocRead start ##########
+16:38:22.958 [main] PID_IS_UNDEFINED [INFO ] [com.atguigu.maven.App] - [reqDocRead] lominOcr 호출 파라미터 : {imageId=xxxyyy.txt, imageCnt=3, imageDocCode=6060451}
+16:38:22.966 [main] PID_IS_UNDEFINED [INFO ] [com.atguigu.maven.App] - [reqDocRead] docRecognizer start
+16:38:23.161 [main] PID_IS_UNDEFINED [INFO ] [com.atguigu.maven.App] - [reqDocRead] DocRecog 인식 완료
+16:38:23.162 [main] PID_IS_UNDEFINED [INFO ] [com.atguigu.maven.App] - [reqDocRead] DocRecog 인식 완료 rtnDocRecog ===> null, rtn ===> {"TotalPages":"23","page0":{"idcode":"SGI0003","doc_name":"개인회생법원문서","text_count":8,"value":{"1":"창원지방법원|0|590|387|1046|435|","2":"2023개회117649|0|478|684|725|721|","3":"최갑수|0|479|766|578|803|","4":"800601-|0|594|767|871|802|","5":"통지서|0|715|489|921|537|","6":"김해시 진영읍 여래로20번길 45, A동 403호(진영리, 성은상가빌 라) |0|479|810|1476|890|","7":"NoValue|-1|0|0|0|0|","8":"NoValue|-1|0|0|0|0|"}},"page1":"unknown","page2":"unknown","page3":"unknown","page4":"unknown","page5":{"idcode":"SGI0005","doc_name":"변제계획(안)","text_count":12,"value":{"1":"2023-09-25|5|1221|517|1373|544|","2":"2023-08-09|5|227|667|608|699|","3":"2027-07-09|5|643|667|1025|699|","4":"48|5|1060|670|1092|697|","5":"9|8|504|585|521|612|","6":"스타일랩|5|513|970|620|1001|","7":"1|5|641|1143|658|1169|","8":"1152009|5|1080|1237|1208|1270|","9":"1451053|5|321|1559|419|1586|","10":"1152009|5|484|1559|582|1585|","11":"299044|5|657|1561|737|1588|","12":"14354112|5|1297|1562|1407|1589|"}},"page6":"unknown","page7":"unknown","page8":"unknown","page9":"unknown","page10":{"idcode":"SGI0006","doc_name":"변제예정액표","text_count":6,"value":{"1":"NoValue|-1|0|0|0|0|","2":{"Start":"1|10|635|909|856|944|","End":"23|10|635|909|856|944|","Count":"2","Value":[{"1":"13|10|220|1819|246|1842|","2":"0|0|0|0|0|0|","3":"0|0|0|0|0|0|","4":"NoValue|-1|0|0|0|0|"},{"1":"14|10|220|1873|246|1896|","2":"0|0|0|0|0|0|","3":"0|0|0|0|0|0|","4":"NoValue|-1|0|0|0|0|"}]},"3":{"Start":"NoValue|-1|0|0|0|0|","End":"NoValue|-1|0|0|0|0|","Count":"NoValue","Value":[{}]},"4":{"Start":"NoValue|-1|0|0|0|0|","End":"NoValue|-1|0|0|0|0|","Count":"NoValue","Value":[{}]},"5":{"Start":"NoValue|-1|0|0|0|0|","End":"NoValue|-1|0|0|0|0|","Count":"NoValue","Value":[{}]},"6":{"Start":"NoValue|-1|0|0|0|0|","End":"NoValue|-1|0|0|0|0|","Count":"NoValue","Value":[{}]}}},"page11":"unknown","page12":"unknown","page13":"unknown","page14":"unknown","page15":"unknown","page16":"unknown","page17":"unknown","page18":{"idcode":"SGI0004","doc_name":"개인회생채권자목록","text_count":6,"value":{"1":"2023-05-16|18|1321|388|1439|411|","2":"62965430|18|515|465|632|494|","3":"0|18|958|521|974|545|","4":"62965430|18|1253|520|1370|549|","5":"2","6":[{"1":"13|20|219|942|248|967|","2":"758754|20|459|1012|577|1042|","3":"95656|20|465|1063|569|1092|"},{"1":"14|20|218|1233|248|1257|","2":"917784|20|458|1303|577|1332|","3":"120236|20|459|1352|577|1381|"}]}},"page19":"unknown","page20":"unknown","page21":"unknown","page22":"unknown"}
+16:38:23.169 [main] PID_IS_UNDEFINED [INFO ] [com.atguigu.maven.App] - [reqDocRead] TotalPages : 23
+16:38:23.661 [main] PID_IS_UNDEFINED [INFO ] [com.atguigu.maven.App] - ########## docregog 인식값처리 loop end ##########
+16:38:23.661 [main] PID_IS_UNDEFINED [INFO ] [com.atguigu.maven.App] - ########## reqDocRead end ##########
+16:40:24.991 [main] PID_IS_UNDEFINED [INFO ] [com.atguigu.maven.App] - ########## reqDocRead start ##########
+16:40:25.097 [main] PID_IS_UNDEFINED [INFO ] [com.atguigu.maven.App] - [reqDocRead] lominOcr 호출 파라미터 : {imageId=xxxyyy.txt, imageCnt=3, imageDocCode=6060451}
+16:40:25.100 [main] PID_IS_UNDEFINED [INFO ] [com.atguigu.maven.App] - [reqDocRead] docRecognizer start
+16:40:25.424 [main] PID_IS_UNDEFINED [INFO ] [com.atguigu.maven.App] - [reqDocRead] DocRecog 인식 완료
+16:40:25.425 [main] PID_IS_UNDEFINED [INFO ] [com.atguigu.maven.App] - [reqDocRead] DocRecog 인식 완료 rtnDocRecog ===> null, rtn ===> {"TotalPages":"3","page0":{"idcode":"SGI0003","doc_name":"개인회생법원문서","text_count":8,"value":{"1":"법원|0|785|133|838|166|","2":"2024개회268258|0|477|536|726|572|","3":"이담은|0|479|606|579|643|","4":"910415-2685457|0|594|606|873|639|","5":"대한민국법원 코드|0|1415|231|1575|252|","6":"경북 성주군 초전면 대장길 119-3, 101동 605호(대장리, 초전아 파트) |0|480|670|1483|778|","7":"NoValue|-1|0|0|0|0|","8":"2025-04-17|0|729|1623|916|1653|"}},"page1":"unknown","page2":"unknown"}
+16:40:25.431 [main] PID_IS_UNDEFINED [INFO ] [com.atguigu.maven.App] - [reqDocRead] TotalPages : 3
+16:40:25.436 [main] PID_IS_UNDEFINED [INFO ] [com.atguigu.maven.App] - ########## docregog 인식값처리 loop end ##########
+16:40:25.437 [main] PID_IS_UNDEFINED [INFO ] [com.atguigu.maven.App] - ########## reqDocRead end ##########
+16:42:24.110 [main] PID_IS_UNDEFINED [DEBUG] [reactor.util.Loggers] - Using Slf4j logging framework
+16:42:24.113 [main] PID_IS_UNDEFINED [DEBUG] [reactor.core.publisher.Hooks] - Enabling stacktrace debugging via onOperatorDebug
+16:42:24.205 [main] PID_IS_UNDEFINED [INFO ] [com.atguigu.maven.App] - ########## reqDocRead start ##########
+16:42:24.255 [main] PID_IS_UNDEFINED [INFO ] [com.atguigu.maven.App] - [reqDocRead] lominOcr 호출 파라미터 : {imageId=xxxyyy.txt, imageCnt=3, imageDocCode=6060451}
+16:42:24.260 [main] PID_IS_UNDEFINED [INFO ] [com.atguigu.maven.App] - [reqDocRead] docRecognizer start
+16:42:24.540 [main] PID_IS_UNDEFINED [INFO ] [com.atguigu.maven.App] - [reqDocRead] DocRecog 인식 완료
+16:42:24.541 [main] PID_IS_UNDEFINED [INFO ] [com.atguigu.maven.App] - [reqDocRead] DocRecog 인식 완료 rtnDocRecog ===> null, rtn ===> {"TotalPages":"3","page0":{"idcode":"SGI0003","doc_name":"개인회생법원문서","text_count":8,"value":{"1":"법원|0|785|133|838|166|","2":"2024개회268258|0|477|536|726|572|","3":"이담은|0|479|606|579|643|","4":"910415-2685457|0|594|606|873|639|","5":"대한민국법원 코드|0|1415|231|1575|252|","6":"경북 성주군 초전면 대장길 119-3, 101동 605호(대장리, 초전아 파트) |0|480|670|1483|778|","7":"NoValue|-1|0|0|0|0|","8":"2025-04-17|0|729|1623|916|1653|"}},"page1":"unknown","page2":"unknown"}
+16:42:24.545 [main] PID_IS_UNDEFINED [INFO ] [com.atguigu.maven.App] - [reqDocRead] TotalPages : 3
+16:45:10.087 [main] PID_IS_UNDEFINED [INFO ] [com.atguigu.maven.App] - ########## docregog 인식값처리 loop end ##########
+16:45:29.804 [main] PID_IS_UNDEFINED [INFO ] [com.atguigu.maven.App] - ########## reqDocRead end ##########
+16:45:35.232 [main] PID_IS_UNDEFINED [DEBUG] [reactor.util.Loggers] - Using Slf4j logging framework
+16:45:35.242 [main] PID_IS_UNDEFINED [DEBUG] [reactor.core.publisher.Hooks] - Enabling stacktrace debugging via onOperatorDebug
+16:45:35.461 [main] PID_IS_UNDEFINED [INFO ] [com.atguigu.maven.App] - ########## reqDocRead start ##########
+16:45:35.561 [main] PID_IS_UNDEFINED [INFO ] [com.atguigu.maven.App] - [reqDocRead] lominOcr 호출 파라미터 : {imageId=xxxyyy.txt, imageCnt=3, imageDocCode=6060451}
+16:45:35.566 [main] PID_IS_UNDEFINED [INFO ] [com.atguigu.maven.App] - [reqDocRead] docRecognizer start
+16:45:36.022 [main] PID_IS_UNDEFINED [INFO ] [com.atguigu.maven.App] - [reqDocRead] DocRecog 인식 완료
+16:45:36.022 [main] PID_IS_UNDEFINED [INFO ] [com.atguigu.maven.App] - [reqDocRead] DocRecog 인식 완료 rtnDocRecog ===> null, rtn ===> {"TotalPages":"3","page0":{"idcode":"SGI0003","doc_name":"개인회생법원문서","text_count":8,"value":{"1":"법원|0|785|133|838|166|","2":"2024개회268258|0|477|536|726|572|","3":"이담은|0|479|606|579|643|","4":"910415-2685457|0|594|606|873|639|","5":"대한민국법원 코드|0|1415|231|1575|252|","6":"경북 성주군 초전면 대장길 119-3, 101동 605호(대장리, 초전아 파트) |0|480|670|1483|778|","7":"NoValue|-1|0|0|0|0|","8":"2025-04-17|0|729|1623|916|1653|"}},"page1":"unknown","page2":"unknown"}
+16:45:36.028 [main] PID_IS_UNDEFINED [INFO ] [com.atguigu.maven.App] - [reqDocRead] TotalPages : 3
+16:48:39.399 [main] PID_IS_UNDEFINED [INFO ] [com.atguigu.maven.App] - ########## docregog 인식값처리 loop end ##########
+16:48:39.400 [main] PID_IS_UNDEFINED [INFO ] [com.atguigu.maven.App] - ########## reqDocRead end ##########
+16:49:16.353 [main] PID_IS_UNDEFINED [DEBUG] [reactor.util.Loggers] - Using Slf4j logging framework
+16:49:16.359 [main] PID_IS_UNDEFINED [DEBUG] [reactor.core.publisher.Hooks] - Enabling stacktrace debugging via onOperatorDebug
+16:49:16.587 [main] PID_IS_UNDEFINED [INFO ] [com.atguigu.maven.App] - ########## reqDocRead start ##########
+16:49:16.702 [main] PID_IS_UNDEFINED [INFO ] [com.atguigu.maven.App] - [reqDocRead] lominOcr 호출 파라미터 : {imageId=xxxyyy.txt, imageCnt=3, imageDocCode=6060451}
+16:49:16.714 [main] PID_IS_UNDEFINED [INFO ] [com.atguigu.maven.App] - [reqDocRead] docRecognizer start
+16:49:17.588 [main] PID_IS_UNDEFINED [INFO ] [com.atguigu.maven.App] - [reqDocRead] DocRecog 인식 완료
+16:49:17.588 [main] PID_IS_UNDEFINED [INFO ] [com.atguigu.maven.App] - [reqDocRead] DocRecog 인식 완료 rtnDocRecog ===> null, rtn ===> {"TotalPages":"3","page0":{"idcode":"SGI0003","doc_name":"개인회생법원문서","text_count":8,"value":{"1":"법원|0|785|133|838|166|","2":"2024개회268258|0|477|536|726|572|","3":"이담은|0|479|606|579|643|","4":"910415-2685457|0|594|606|873|639|","5":"대한민국법원 코드|0|1415|231|1575|252|","6":"경북 성주군 초전면 대장길 119-3, 101동 605호(대장리, 초전아 파트) |0|480|670|1483|778|","7":"NoValue|-1|0|0|0|0|","8":"2025-04-17|0|729|1623|916|1653|"}},"page1":"unknown","page2":"unknown"}
+16:49:17.595 [main] PID_IS_UNDEFINED [INFO ] [com.atguigu.maven.App] - [reqDocRead] TotalPages : 3
+17:22:31.237 [main] PID_IS_UNDEFINED [INFO ] [com.atguigu.maven.App] - ########## docregog 인식값처리 loop end ##########
+17:22:31.237 [main] PID_IS_UNDEFINED [INFO ] [com.atguigu.maven.App] - ########## reqDocRead end ##########
+17:22:34.677 [main] PID_IS_UNDEFINED [DEBUG] [reactor.util.Loggers] - Using Slf4j logging framework
+17:22:34.683 [main] PID_IS_UNDEFINED [DEBUG] [reactor.core.publisher.Hooks] - Enabling stacktrace debugging via onOperatorDebug
+17:22:35.270 [main] PID_IS_UNDEFINED [INFO ] [com.atguigu.maven.App] - ########## reqDocRead start ##########
+17:22:35.390 [main] PID_IS_UNDEFINED [INFO ] [com.atguigu.maven.App] - [reqDocRead] lominOcr 호출 파라미터 : {imageId=xxxyyy.txt, imageCnt=3, imageDocCode=6060451}
+17:22:35.396 [main] PID_IS_UNDEFINED [INFO ] [com.atguigu.maven.App] - [reqDocRead] docRecognizer start
+17:22:35.943 [main] PID_IS_UNDEFINED [INFO ] [com.atguigu.maven.App] - [reqDocRead] DocRecog 인식 완료
+17:22:35.943 [main] PID_IS_UNDEFINED [INFO ] [com.atguigu.maven.App] - [reqDocRead] DocRecog 인식 완료 rtnDocRecog ===> null, rtn ===> {"TotalPages":"3","page0":{"idcode":"SGI0003","doc_name":"개인회생법원문서","text_count":8,"value":{"1":"법원|0|785|133|838|166|","2":"2024개회268258|0|477|536|726|572|","3":"이담은|0|479|606|579|643|","4":"910415-2685457|0|594|606|873|639|","5":"대한민국법원 코드|0|1415|231|1575|252|","6":"경북 성주군 초전면 대장길 119-3, 101동 605호(대장리, 초전아 파트) |0|480|670|1483|778|","7":"NoValue|-1|0|0|0|0|","8":"2025-04-17|0|729|1623|916|1653|"}},"page1":"unknown","page2":"unknown"}
+17:22:35.949 [main] PID_IS_UNDEFINED [INFO ] [com.atguigu.maven.App] - [reqDocRead] TotalPages : 3
+17:31:11.710 [main] PID_IS_UNDEFINED [INFO ] [com.atguigu.maven.App] - ########## docregog 인식값처리 loop end ##########
+17:31:11.711 [main] PID_IS_UNDEFINED [INFO ] [com.atguigu.maven.App] - ########## reqDocRead end ##########
+17:35:53.779 [main] PID_IS_UNDEFINED [DEBUG] [reactor.util.Loggers] - Using Slf4j logging framework
+17:35:53.864 [main] PID_IS_UNDEFINED [DEBUG] [reactor.core.publisher.Hooks] - Enabling stacktrace debugging via onOperatorDebug
+17:35:54.236 [main] PID_IS_UNDEFINED [INFO ] [com.atguigu.maven.App] - ########## reqDocRead start ##########
+17:35:54.314 [main] PID_IS_UNDEFINED [INFO ] [com.atguigu.maven.App] - [reqDocRead] lominOcr 호출 파라미터 : {imageId=xxxyyy.txt, imageCnt=3, imageDocCode=6060451}
+17:35:54.319 [main] PID_IS_UNDEFINED [INFO ] [com.atguigu.maven.App] - [reqDocRead] docRecognizer start
+17:35:54.953 [main] PID_IS_UNDEFINED [INFO ] [com.atguigu.maven.App] - [reqDocRead] DocRecog 인식 완료
+17:35:54.954 [main] PID_IS_UNDEFINED [INFO ] [com.atguigu.maven.App] - [reqDocRead] DocRecog 인식 완료 rtnDocRecog ===> null, rtn ===> {"TotalPages":"3","page0":{"idcode":"SGI0003","doc_name":"개인회생법원문서","text_count":8,"value":{"1":"법원|0|785|133|838|166|","2":"2024개회268258|0|477|536|726|572|","3":"이담은|0|479|606|579|643|","4":"910415-2685457|0|594|606|873|639|","5":"대한민국법원 코드|0|1415|231|1575|252|","6":"경북 성주군 초전면 대장길 119-3, 101동 605호(대장리, 초전아 파트) |0|480|670|1483|778|","7":"NoValue|-1|0|0|0|0|","8":"2025-04-17|0|729|1623|916|1653|"}},"page1":"unknown","page2":"unknown"}
+17:35:54.959 [main] PID_IS_UNDEFINED [INFO ] [com.atguigu.maven.App] - [reqDocRead] TotalPages : 3
+17:43:24.090 [main] PID_IS_UNDEFINED [INFO ] [com.atguigu.maven.App] - ########## docregog 인식값처리 loop end ##########
+17:43:24.091 [main] PID_IS_UNDEFINED [INFO ] [com.atguigu.maven.App] - ########## reqDocRead end ##########
+17:43:35.049 [main] PID_IS_UNDEFINED [DEBUG] [reactor.util.Loggers] - Using Slf4j logging framework
+17:43:35.056 [main] PID_IS_UNDEFINED [DEBUG] [reactor.core.publisher.Hooks] - Enabling stacktrace debugging via onOperatorDebug
+17:43:35.349 [main] PID_IS_UNDEFINED [INFO ] [com.atguigu.maven.App] - ########## reqDocRead start ##########
+17:43:35.416 [main] PID_IS_UNDEFINED [INFO ] [com.atguigu.maven.App] - [reqDocRead] lominOcr 호출 파라미터 : {imageId=xxxyyy.txt, imageCnt=3, imageDocCode=6060451}
+17:43:35.421 [main] PID_IS_UNDEFINED [INFO ] [com.atguigu.maven.App] - [reqDocRead] docRecognizer start
+17:43:35.964 [main] PID_IS_UNDEFINED [INFO ] [com.atguigu.maven.App] - [reqDocRead] DocRecog 인식 완료
+17:43:35.964 [main] PID_IS_UNDEFINED [INFO ] [com.atguigu.maven.App] - [reqDocRead] DocRecog 인식 완료 rtnDocRecog ===> null, rtn ===> {"TotalPages":"3","page0":{"idcode":"SGI0003","doc_name":"개인회생법원문서","text_count":8,"value":{"1":"법원|0|785|133|838|166|","2":"2024개회268258|0|477|536|726|572|","3":"이담은|0|479|606|579|643|","4":"910415-2685457|0|594|606|873|639|","5":"대한민국법원 코드|0|1415|231|1575|252|","6":"경북 성주군 초전면 대장길 119-3, 101동 605호(대장리, 초전아 파트) |0|480|670|1483|778|","7":"NoValue|-1|0|0|0|0|","8":"2025-04-17|0|729|1623|916|1653|"}},"page1":"unknown","page2":"unknown"}
+17:43:35.968 [main] PID_IS_UNDEFINED [INFO ] [com.atguigu.maven.App] - [reqDocRead] TotalPages : 3
+17:43:42.199 [main] PID_IS_UNDEFINED [INFO ] [com.atguigu.maven.App] - ########## docregog 인식값처리 loop end ##########
+17:43:45.545 [main] PID_IS_UNDEFINED [INFO ] [com.atguigu.maven.App] - ########## reqDocRead end ##########
+17:43:50.340 [main] PID_IS_UNDEFINED [DEBUG] [reactor.util.Loggers] - Using Slf4j logging framework
+17:43:50.344 [main] PID_IS_UNDEFINED [DEBUG] [reactor.core.publisher.Hooks] - Enabling stacktrace debugging via onOperatorDebug
+17:43:50.576 [main] PID_IS_UNDEFINED [INFO ] [com.atguigu.maven.App] - ########## reqDocRead start ##########
+17:43:50.631 [main] PID_IS_UNDEFINED [INFO ] [com.atguigu.maven.App] - [reqDocRead] lominOcr 호출 파라미터 : {imageId=xxxyyy.txt, imageCnt=3, imageDocCode=6060451}
+17:43:50.643 [main] PID_IS_UNDEFINED [INFO ] [com.atguigu.maven.App] - [reqDocRead] docRecognizer start
+17:43:51.404 [main] PID_IS_UNDEFINED [INFO ] [com.atguigu.maven.App] - [reqDocRead] DocRecog 인식 완료
+17:43:51.405 [main] PID_IS_UNDEFINED [INFO ] [com.atguigu.maven.App] - [reqDocRead] DocRecog 인식 완료 rtnDocRecog ===> null, rtn ===> {"TotalPages":"3","page0":{"idcode":"SGI0003","doc_name":"개인회생법원문서","text_count":8,"value":{"1":"법원|0|785|133|838|166|","2":"2024개회268258|0|477|536|726|572|","3":"이담은|0|479|606|579|643|","4":"910415-2685457|0|594|606|873|639|","5":"대한민국법원 코드|0|1415|231|1575|252|","6":"경북 성주군 초전면 대장길 119-3, 101동 605호(대장리, 초전아 파트) |0|480|670|1483|778|","7":"NoValue|-1|0|0|0|0|","8":"2025-04-17|0|729|1623|916|1653|"}},"page1":"unknown","page2":"unknown"}
+17:43:51.410 [main] PID_IS_UNDEFINED [INFO ] [com.atguigu.maven.App] - [reqDocRead] TotalPages : 3
+17:48:25.456 [main] PID_IS_UNDEFINED [INFO ] [com.atguigu.maven.App] - ########## docregog 인식값처리 loop end ##########
+17:48:25.457 [main] PID_IS_UNDEFINED [INFO ] [com.atguigu.maven.App] - ########## reqDocRead end ##########
+17:50:05.219 [main] PID_IS_UNDEFINED [DEBUG] [reactor.util.Loggers] - Using Slf4j logging framework
+17:50:05.224 [main] PID_IS_UNDEFINED [DEBUG] [reactor.core.publisher.Hooks] - Enabling stacktrace debugging via onOperatorDebug
+17:50:05.329 [main] PID_IS_UNDEFINED [INFO ] [com.atguigu.maven.App] - ########## reqDocRead start ##########
+17:50:05.381 [main] PID_IS_UNDEFINED [INFO ] [com.atguigu.maven.App] - [reqDocRead] lominOcr 호출 파라미터 : {imageId=xxxyyy.txt, imageCnt=3, imageDocCode=6060451}
+17:50:05.385 [main] PID_IS_UNDEFINED [INFO ] [com.atguigu.maven.App] - [reqDocRead] docRecognizer start
+17:50:05.756 [main] PID_IS_UNDEFINED [INFO ] [com.atguigu.maven.App] - [reqDocRead] DocRecog 인식 완료
+17:50:05.757 [main] PID_IS_UNDEFINED [INFO ] [com.atguigu.maven.App] - [reqDocRead] DocRecog 인식 완료 rtnDocRecog ===> null, rtn ===> {"TotalPages":"3","page0":{"idcode":"SGI0003","doc_name":"개인회생법원문서","text_count":8,"value":{"1":"법원|0|785|133|838|166|","2":"2024개회268258|0|477|536|726|572|","3":"이담은|0|479|606|579|643|","4":"910415-2685457|0|594|606|873|639|","5":"대한민국법원 코드|0|1415|231|1575|252|","6":"경북 성주군 초전면 대장길 119-3, 101동 605호(대장리, 초전아 파트) |0|480|670|1483|778|","7":"NoValue|-1|0|0|0|0|","8":"2025-04-17|0|729|1623|916|1653|"}},"page1":"unknown","page2":"unknown"}
+17:50:05.762 [main] PID_IS_UNDEFINED [INFO ] [com.atguigu.maven.App] - [reqDocRead] TotalPages : 3
+17:50:46.046 [main] PID_IS_UNDEFINED [INFO ] [com.atguigu.maven.App] - ########## docregog 인식값처리 loop end ##########
+17:50:46.048 [main] PID_IS_UNDEFINED [INFO ] [com.atguigu.maven.App] - ########## reqDocRead end ##########
+17:50:48.584 [main] PID_IS_UNDEFINED [DEBUG] [reactor.util.Loggers] - Using Slf4j logging framework
+17:50:48.593 [main] PID_IS_UNDEFINED [DEBUG] [reactor.core.publisher.Hooks] - Enabling stacktrace debugging via onOperatorDebug
+17:50:48.765 [main] PID_IS_UNDEFINED [INFO ] [com.atguigu.maven.App] - ########## reqDocRead start ##########
+17:50:48.858 [main] PID_IS_UNDEFINED [INFO ] [com.atguigu.maven.App] - [reqDocRead] lominOcr 호출 파라미터 : {imageId=xxxyyy.txt, imageCnt=3, imageDocCode=6060451}
+17:50:48.867 [main] PID_IS_UNDEFINED [INFO ] [com.atguigu.maven.App] - [reqDocRead] docRecognizer start
+17:50:49.781 [main] PID_IS_UNDEFINED [INFO ] [com.atguigu.maven.App] - [reqDocRead] DocRecog 인식 완료
+17:50:49.782 [main] PID_IS_UNDEFINED [INFO ] [com.atguigu.maven.App] - [reqDocRead] DocRecog 인식 완료 rtnDocRecog ===> null, rtn ===> {"TotalPages":"3","page0":{"idcode":"SGI0003","doc_name":"개인회생법원문서","text_count":8,"value":{"1":"법원|0|785|133|838|166|","2":"2024개회268258|0|477|536|726|572|","3":"이담은|0|479|606|579|643|","4":"910415-2685457|0|594|606|873|639|","5":"대한민국법원 코드|0|1415|231|1575|252|","6":"경북 성주군 초전면 대장길 119-3, 101동 605호(대장리, 초전아 파트) |0|480|670|1483|778|","7":"NoValue|-1|0|0|0|0|","8":"2025-04-17|0|729|1623|916|1653|"}},"page1":"unknown","page2":"unknown"}
+17:50:49.788 [main] PID_IS_UNDEFINED [INFO ] [com.atguigu.maven.App] - [reqDocRead] TotalPages : 3
+17:53:53.465 [main] PID_IS_UNDEFINED [INFO ] [com.atguigu.maven.App] - ########## docregog 인식값처리 loop end ##########
+17:53:53.465 [main] PID_IS_UNDEFINED [INFO ] [com.atguigu.maven.App] - ########## reqDocRead end ##########
+17:53:55.919 [main] PID_IS_UNDEFINED [DEBUG] [reactor.util.Loggers] - Using Slf4j logging framework
+17:53:55.928 [main] PID_IS_UNDEFINED [DEBUG] [reactor.core.publisher.Hooks] - Enabling stacktrace debugging via onOperatorDebug
+17:53:56.107 [main] PID_IS_UNDEFINED [INFO ] [com.atguigu.maven.App] - ########## reqDocRead start ##########
+17:53:56.176 [main] PID_IS_UNDEFINED [INFO ] [com.atguigu.maven.App] - [reqDocRead] lominOcr 호출 파라미터 : {imageId=xxxyyy.txt, imageCnt=3, imageDocCode=6060451}
+17:53:56.181 [main] PID_IS_UNDEFINED [INFO ] [com.atguigu.maven.App] - [reqDocRead] docRecognizer start
+17:53:57.211 [main] PID_IS_UNDEFINED [INFO ] [com.atguigu.maven.App] - [reqDocRead] DocRecog 인식 완료
+17:53:57.212 [main] PID_IS_UNDEFINED [INFO ] [com.atguigu.maven.App] - [reqDocRead] DocRecog 인식 완료 rtnDocRecog ===> null, rtn ===> {"TotalPages":"3","page0":{"idcode":"SGI0003","doc_name":"개인회생법원문서","text_count":8,"value":{"1":"법원|0|785|133|838|166|","2":"2024개회268258|0|477|536|726|572|","3":"이담은|0|479|606|579|643|","4":"910415-2685457|0|594|606|873|639|","5":"대한민국법원 코드|0|1415|231|1575|252|","6":"경북 성주군 초전면 대장길 119-3, 101동 605호(대장리, 초전아 파트) |0|480|670|1483|778|","7":"NoValue|-1|0|0|0|0|","8":"2025-04-17|0|729|1623|916|1653|"}},"page1":"unknown","page2":"unknown"}
+17:53:57.221 [main] PID_IS_UNDEFINED [INFO ] [com.atguigu.maven.App] - [reqDocRead] TotalPages : 3
+17:54:08.470 [main] PID_IS_UNDEFINED [INFO ] [com.atguigu.maven.App] - ########## docregog 인식값처리 loop end ##########
+17:54:08.471 [main] PID_IS_UNDEFINED [INFO ] [com.atguigu.maven.App] - ########## reqDocRead end ##########
+17:54:23.964 [main] PID_IS_UNDEFINED [DEBUG] [reactor.util.Loggers] - Using Slf4j logging framework
+17:54:23.978 [main] PID_IS_UNDEFINED [DEBUG] [reactor.core.publisher.Hooks] - Enabling stacktrace debugging via onOperatorDebug
+17:54:24.636 [main] PID_IS_UNDEFINED [INFO ] [com.atguigu.maven.App] - ########## reqDocRead start ##########
+17:54:24.730 [main] PID_IS_UNDEFINED [INFO ] [com.atguigu.maven.App] - [reqDocRead] lominOcr 호출 파라미터 : {imageId=xxxyyy.txt, imageCnt=3, imageDocCode=6060451}
+17:54:24.736 [main] PID_IS_UNDEFINED [INFO ] [com.atguigu.maven.App] - [reqDocRead] docRecognizer start
+17:54:25.410 [main] PID_IS_UNDEFINED [INFO ] [com.atguigu.maven.App] - [reqDocRead] DocRecog 인식 완료
+17:54:25.411 [main] PID_IS_UNDEFINED [INFO ] [com.atguigu.maven.App] - [reqDocRead] DocRecog 인식 완료 rtnDocRecog ===> null, rtn ===> {"TotalPages":"3","page0":{"idcode":"SGI0003","doc_name":"개인회생법원문서","text_count":8,"value":{"1":"법원|0|785|133|838|166|","2":"2024개회268258|0|477|536|726|572|","3":"이담은|0|479|606|579|643|","4":"910415-2685457|0|594|606|873|639|","5":"대한민국법원 코드|0|1415|231|1575|252|","6":"경북 성주군 초전면 대장길 119-3, 101동 605호(대장리, 초전아 파트) |0|480|670|1483|778|","7":"NoValue|-1|0|0|0|0|","8":"2025-04-17|0|729|1623|916|1653|"}},"page1":"unknown","page2":"unknown"}
+17:54:25.418 [main] PID_IS_UNDEFINED [INFO ] [com.atguigu.maven.App] - [reqDocRead] TotalPages : 3
+18:05:21.081 [main] PID_IS_UNDEFINED [INFO ] [com.atguigu.maven.App] - ########## docregog 인식값처리 loop end ##########
+18:05:21.081 [main] PID_IS_UNDEFINED [INFO ] [com.atguigu.maven.App] - ########## reqDocRead end ##########
+18:07:35.034 [main] PID_IS_UNDEFINED [DEBUG] [reactor.util.Loggers] - Using Slf4j logging framework
+18:07:35.046 [main] PID_IS_UNDEFINED [DEBUG] [reactor.core.publisher.Hooks] - Enabling stacktrace debugging via onOperatorDebug
+18:07:35.161 [main] PID_IS_UNDEFINED [INFO ] [com.atguigu.maven.App] - ########## reqDocRead start ##########
+18:07:35.207 [main] PID_IS_UNDEFINED [INFO ] [com.atguigu.maven.App] - [reqDocRead] lominOcr 호출 파라미터 : {imageId=xxxyyy.txt, imageCnt=3, imageDocCode=6060451}
+18:07:35.207 [main] PID_IS_UNDEFINED [INFO ] [com.atguigu.maven.App] - [reqDocRead] docRecognizer start
+18:07:35.511 [main] PID_IS_UNDEFINED [INFO ] [com.atguigu.maven.App] - [reqDocRead] DocRecog 인식 완료
+18:07:35.511 [main] PID_IS_UNDEFINED [INFO ] [com.atguigu.maven.App] - [reqDocRead] DocRecog 인식 완료 rtnDocRecog ===> null, rtn ===> {"TotalPages":"3","page0":{"idcode":"SGI0003","doc_name":"개인회생법원문서","text_count":8,"value":{"1":"법원|0|785|133|838|166|","2":"2024개회268258|0|477|536|726|572|","3":"이담은|0|479|606|579|643|","4":"910415-2685457|0|594|606|873|639|","5":"대한민국법원 코드|0|1415|231|1575|252|","6":"경북 성주군 초전면 대장길 119-3, 101동 605호(대장리, 초전아 파트) |0|480|670|1483|778|","7":"NoValue|-1|0|0|0|0|","8":"2025-04-17|0|729|1623|916|1653|"}},"page1":"unknown","page2":"unknown"}
+18:07:35.515 [main] PID_IS_UNDEFINED [INFO ] [com.atguigu.maven.App] - [reqDocRead] TotalPages : 3
+18:11:37.017 [main] PID_IS_UNDEFINED [INFO ] [com.atguigu.maven.App] - ########## docregog 인식값처리 loop end ##########
+18:11:40.368 [main] PID_IS_UNDEFINED [INFO ] [com.atguigu.maven.App] - ########## reqDocRead end ##########
+18:17:20.818 [main] PID_IS_UNDEFINED [DEBUG] [reactor.util.Loggers] - Using Slf4j logging framework
+18:17:20.823 [main] PID_IS_UNDEFINED [DEBUG] [reactor.core.publisher.Hooks] - Enabling stacktrace debugging via onOperatorDebug
+18:17:20.943 [main] PID_IS_UNDEFINED [INFO ] [com.atguigu.maven.App] - ########## reqDocRead start ##########
+18:17:20.990 [main] PID_IS_UNDEFINED [INFO ] [com.atguigu.maven.App] - [reqDocRead] lominOcr 호출 파라미터 : {imageId=xxxyyy.txt, imageCnt=3, imageDocCode=6060451}
+18:17:20.990 [main] PID_IS_UNDEFINED [INFO ] [com.atguigu.maven.App] - [reqDocRead] docRecognizer start
+18:17:21.271 [main] PID_IS_UNDEFINED [INFO ] [com.atguigu.maven.App] - [reqDocRead] DocRecog 인식 완료
+18:17:21.271 [main] PID_IS_UNDEFINED [INFO ] [com.atguigu.maven.App] - [reqDocRead] DocRecog 인식 완료 rtnDocRecog ===> null, rtn ===> {"TotalPages":"3","page0":{"idcode":"SGI0003","doc_name":"개인회생법원문서","text_count":8,"value":{"1":"법원|0|785|133|838|166|","2":"2024개회268258|0|477|536|726|572|","3":"이담은|0|479|606|579|643|","4":"910415-2685457|0|594|606|873|639|","5":"대한민국법원 코드|0|1415|231|1575|252|","6":"경북 성주군 초전면 대장길 119-3, 101동 605호(대장리, 초전아 파트) |0|480|670|1483|778|","7":"NoValue|-1|0|0|0|0|","8":"2025-04-17|0|729|1623|916|1653|"}},"page1":"unknown","page2":"unknown"}
+18:17:21.275 [main] PID_IS_UNDEFINED [INFO ] [com.atguigu.maven.App] - [reqDocRead] TotalPages : 3
+18:17:40.620 [main] PID_IS_UNDEFINED [INFO ] [com.atguigu.maven.App] - ########## docregog 인식값처리 loop end ##########
+18:17:42.291 [main] PID_IS_UNDEFINED [INFO ] [com.atguigu.maven.App] - ########## reqDocRead end ##########
+18:17:47.550 [main] PID_IS_UNDEFINED [DEBUG] [reactor.util.Loggers] - Using Slf4j logging framework
+18:17:47.556 [main] PID_IS_UNDEFINED [DEBUG] [reactor.core.publisher.Hooks] - Enabling stacktrace debugging via onOperatorDebug
+18:17:47.858 [main] PID_IS_UNDEFINED [INFO ] [com.atguigu.maven.App] - ########## reqDocRead start ##########
+18:17:47.924 [main] PID_IS_UNDEFINED [INFO ] [com.atguigu.maven.App] - [reqDocRead] lominOcr 호출 파라미터 : {imageId=xxxyyy.txt, imageCnt=3, imageDocCode=6060451}
+18:17:47.933 [main] PID_IS_UNDEFINED [INFO ] [com.atguigu.maven.App] - [reqDocRead] docRecognizer start
+18:17:48.821 [main] PID_IS_UNDEFINED [INFO ] [com.atguigu.maven.App] - [reqDocRead] DocRecog 인식 완료
+18:17:48.821 [main] PID_IS_UNDEFINED [INFO ] [com.atguigu.maven.App] - [reqDocRead] DocRecog 인식 완료 rtnDocRecog ===> null, rtn ===> {"TotalPages":"3","page0":{"idcode":"SGI0003","doc_name":"개인회생법원문서","text_count":8,"value":{"1":"법원|0|785|133|838|166|","2":"2024개회268258|0|477|536|726|572|","3":"이담은|0|479|606|579|643|","4":"910415-2685457|0|594|606|873|639|","5":"대한민국법원 코드|0|1415|231|1575|252|","6":"경북 성주군 초전면 대장길 119-3, 101동 605호(대장리, 초전아 파트) |0|480|670|1483|778|","7":"NoValue|-1|0|0|0|0|","8":"2025-04-17|0|729|1623|916|1653|"}},"page1":"unknown","page2":"unknown"}
+18:17:48.824 [main] PID_IS_UNDEFINED [INFO ] [com.atguigu.maven.App] - [reqDocRead] TotalPages : 3
+18:18:46.605 [main] PID_IS_UNDEFINED [INFO ] [com.atguigu.maven.App] - ########## docregog 인식값처리 loop end ##########
+18:18:46.605 [main] PID_IS_UNDEFINED [INFO ] [com.atguigu.maven.App] - ########## reqDocRead end ##########
+18:18:50.257 [main] PID_IS_UNDEFINED [DEBUG] [reactor.util.Loggers] - Using Slf4j logging framework
+18:18:50.265 [main] PID_IS_UNDEFINED [DEBUG] [reactor.core.publisher.Hooks] - Enabling stacktrace debugging via onOperatorDebug
+18:18:50.476 [main] PID_IS_UNDEFINED [INFO ] [com.atguigu.maven.App] - ########## reqDocRead start ##########
+18:18:50.560 [main] PID_IS_UNDEFINED [INFO ] [com.atguigu.maven.App] - [reqDocRead] lominOcr 호출 파라미터 : {imageId=xxxyyy.txt, imageCnt=3, imageDocCode=6060451}
+18:18:50.560 [main] PID_IS_UNDEFINED [INFO ] [com.atguigu.maven.App] - [reqDocRead] docRecognizer start
+18:18:51.192 [main] PID_IS_UNDEFINED [INFO ] [com.atguigu.maven.App] - [reqDocRead] DocRecog 인식 완료
+18:18:51.192 [main] PID_IS_UNDEFINED [INFO ] [com.atguigu.maven.App] - [reqDocRead] DocRecog 인식 완료 rtnDocRecog ===> null, rtn ===> {"TotalPages":"3","page0":{"idcode":"SGI0003","doc_name":"개인회생법원문서","text_count":8,"value":{"1":"법원|0|785|133|838|166|","2":"2024개회268258|0|477|536|726|572|","3":"이담은|0|479|606|579|643|","4":"910415-2685457|0|594|606|873|639|","5":"대한민국법원 코드|0|1415|231|1575|252|","6":"경북 성주군 초전면 대장길 119-3, 101동 605호(대장리, 초전아 파트) |0|480|670|1483|778|","7":"NoValue|-1|0|0|0|0|","8":"2025-04-17|0|729|1623|916|1653|"}},"page1":"unknown","page2":"unknown"}
+18:18:51.200 [main] PID_IS_UNDEFINED [INFO ] [com.atguigu.maven.App] - [reqDocRead] TotalPages : 3
+18:19:53.183 [main] PID_IS_UNDEFINED [INFO ] [com.atguigu.maven.App] - ########## docregog 인식값처리 loop end ##########
+18:19:53.184 [main] PID_IS_UNDEFINED [INFO ] [com.atguigu.maven.App] - ########## reqDocRead end ##########
+18:20:10.754 [main] PID_IS_UNDEFINED [DEBUG] [reactor.util.Loggers] - Using Slf4j logging framework
+18:20:10.804 [main] PID_IS_UNDEFINED [DEBUG] [reactor.core.publisher.Hooks] - Enabling stacktrace debugging via onOperatorDebug
+18:20:11.316 [main] PID_IS_UNDEFINED [INFO ] [com.atguigu.maven.App] - ########## reqDocRead start ##########
+18:20:11.402 [main] PID_IS_UNDEFINED [INFO ] [com.atguigu.maven.App] - [reqDocRead] lominOcr 호출 파라미터 : {imageId=xxxyyy.txt, imageCnt=3, imageDocCode=6060451}
+18:20:11.407 [main] PID_IS_UNDEFINED [INFO ] [com.atguigu.maven.App] - [reqDocRead] docRecognizer start
+18:20:12.098 [main] PID_IS_UNDEFINED [INFO ] [com.atguigu.maven.App] - [reqDocRead] DocRecog 인식 완료
+18:20:12.098 [main] PID_IS_UNDEFINED [INFO ] [com.atguigu.maven.App] - [reqDocRead] DocRecog 인식 완료 rtnDocRecog ===> null, rtn ===> {"TotalPages":"3","page0":{"idcode":"SGI0003","doc_name":"개인회생법원문서","text_count":8,"value":{"1":"법원|0|785|133|838|166|","2":"2024개회268258|0|477|536|726|572|","3":"이담은|0|479|606|579|643|","4":"910415-2685457|0|594|606|873|639|","5":"대한민국법원 코드|0|1415|231|1575|252|","6":"경북 성주군 초전면 대장길 119-3, 101동 605호(대장리, 초전아 파트) |0|480|670|1483|778|","7":"NoValue|-1|0|0|0|0|","8":"2025-04-17|0|729|1623|916|1653|"}},"page1":"unknown","page2":"unknown"}
+18:20:12.104 [main] PID_IS_UNDEFINED [INFO ] [com.atguigu.maven.App] - [reqDocRead] TotalPages : 3
+18:20:44.152 [main] PID_IS_UNDEFINED [INFO ] [com.atguigu.maven.App] - ########## docregog 인식값처리 loop end ##########
+18:20:44.152 [main] PID_IS_UNDEFINED [INFO ] [com.atguigu.maven.App] - ########## reqDocRead end ##########
+18:20:51.004 [main] PID_IS_UNDEFINED [DEBUG] [reactor.util.Loggers] - Using Slf4j logging framework
+18:20:51.031 [main] PID_IS_UNDEFINED [DEBUG] [reactor.core.publisher.Hooks] - Enabling stacktrace debugging via onOperatorDebug
+18:20:51.379 [main] PID_IS_UNDEFINED [INFO ] [com.atguigu.maven.App] - ########## reqDocRead start ##########
+18:20:51.522 [main] PID_IS_UNDEFINED [INFO ] [com.atguigu.maven.App] - [reqDocRead] lominOcr 호출 파라미터 : {imageId=xxxyyy.txt, imageCnt=3, imageDocCode=6060451}
+18:20:51.526 [main] PID_IS_UNDEFINED [INFO ] [com.atguigu.maven.App] - [reqDocRead] docRecognizer start
+18:20:52.309 [main] PID_IS_UNDEFINED [INFO ] [com.atguigu.maven.App] - [reqDocRead] DocRecog 인식 완료
+18:20:52.312 [main] PID_IS_UNDEFINED [INFO ] [com.atguigu.maven.App] - [reqDocRead] DocRecog 인식 완료 rtnDocRecog ===> null, rtn ===> {"TotalPages":"3","page0":{"idcode":"SGI0003","doc_name":"개인회생법원문서","text_count":8,"value":{"1":"법원|0|785|133|838|166|","2":"2024개회268258|0|477|536|726|572|","3":"이담은|0|479|606|579|643|","4":"910415-2685457|0|594|606|873|639|","5":"대한민국법원 코드|0|1415|231|1575|252|","6":"경북 성주군 초전면 대장길 119-3, 101동 605호(대장리, 초전아 파트) |0|480|670|1483|778|","7":"NoValue|-1|0|0|0|0|","8":"2025-04-17|0|729|1623|916|1653|"}},"page1":"unknown","page2":"unknown"}
+18:20:52.318 [main] PID_IS_UNDEFINED [INFO ] [com.atguigu.maven.App] - [reqDocRead] TotalPages : 3
+18:21:04.231 [main] PID_IS_UNDEFINED [INFO ] [com.atguigu.maven.App] - ########## docregog 인식값처리 loop end ##########
+18:21:04.231 [main] PID_IS_UNDEFINED [INFO ] [com.atguigu.maven.App] - ########## reqDocRead end ##########
+18:21:08.088 [main] PID_IS_UNDEFINED [DEBUG] [reactor.util.Loggers] - Using Slf4j logging framework
+18:21:08.420 [main] PID_IS_UNDEFINED [DEBUG] [reactor.core.publisher.Hooks] - Enabling stacktrace debugging via onOperatorDebug
+18:21:08.836 [main] PID_IS_UNDEFINED [INFO ] [com.atguigu.maven.App] - ########## reqDocRead start ##########
+18:21:08.940 [main] PID_IS_UNDEFINED [INFO ] [com.atguigu.maven.App] - [reqDocRead] lominOcr 호출 파라미터 : {imageId=xxxyyy.txt, imageCnt=3, imageDocCode=6060451}
+18:21:08.946 [main] PID_IS_UNDEFINED [INFO ] [com.atguigu.maven.App] - [reqDocRead] docRecognizer start
+18:21:09.555 [main] PID_IS_UNDEFINED [INFO ] [com.atguigu.maven.App] - [reqDocRead] DocRecog 인식 완료
+18:21:09.555 [main] PID_IS_UNDEFINED [INFO ] [com.atguigu.maven.App] - [reqDocRead] DocRecog 인식 완료 rtnDocRecog ===> null, rtn ===> {"TotalPages":"3","page0":{"idcode":"SGI0003","doc_name":"개인회생법원문서","text_count":8,"value":{"1":"법원|0|785|133|838|166|","2":"2024개회268258|0|477|536|726|572|","3":"이담은|0|479|606|579|643|","4":"910415-2685457|0|594|606|873|639|","5":"대한민국법원 코드|0|1415|231|1575|252|","6":"경북 성주군 초전면 대장길 119-3, 101동 605호(대장리, 초전아 파트) |0|480|670|1483|778|","7":"NoValue|-1|0|0|0|0|","8":"2025-04-17|0|729|1623|916|1653|"}},"page1":"unknown","page2":"unknown"}
+18:21:09.561 [main] PID_IS_UNDEFINED [INFO ] [com.atguigu.maven.App] - [reqDocRead] TotalPages : 3
+18:21:16.715 [main] PID_IS_UNDEFINED [INFO ] [com.atguigu.maven.App] - ########## docregog 인식값처리 loop end ##########
+18:21:16.715 [main] PID_IS_UNDEFINED [INFO ] [com.atguigu.maven.App] - ########## reqDocRead end ##########

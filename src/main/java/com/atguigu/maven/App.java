@@ -133,66 +133,13 @@ public class App {
                 //LOGGER.info("[reqDocRead] writeFile 완료");
                 String rtnDocRecog = "";
                 if (nRtn == 0) {
-                    // 법원문서는 ini파일 분리함.
-                    //LOGGER.info("[reqDocRead] imageDocCode : " + DocList.get(0).get("imageDocCode"));
-                    //LOGGER.info("[reqDocRead] lawDocCode : " + lawDocCode);
-                    //LOGGER.info("[reqDocRead] IdCardDocCode : " + IdCardDocCode);
-                    //LOGGER.info("[reqDocRead] insurDocCode : " + insurDocCode);
 
                     if (lawDocCode.contains(DocList.get(0).get("imageDocCode"))) {
-                        // LOGGER.info("[reqDocRead] 법원문서 인식 호출, ini file : " + docRecogCourtIniPath);
-                        // rtnDocRecog = doReg(docRecogExePath, docRecogCourtIniPath, strFilePath, docRecogSoPath);
                         rtnDocRecog = readRecResult();
                     }
-                    /*
-                    // 신분증 분리
-                    else if(IdCardDocCode.contains(DocList.get(0).get("imageDocCode"))) {
-                        //docRecogIdCardIniPath
-                        LOGGER.info("[reqDocRead] 신분증 인식 호출, ini file : " + docRecogIdCardIniPath);
-                        rtnDocRecog = doReg(docRecogExePath, docRecogIdCardIniPath, strFilePath, docRecogSoPath);
-                    }
-                    // 통장사본 분리
-                    else if(BankBookDocCode.contains(DocList.get(0).get("imageDocCode"))) {
-                        //docRecogIdCardIniPath
-                        LOGGER.info("[reqDocRead] 통장사본 인식 호출, ini file : " + docRecogIdCardIniPath);
-                        rtnDocRecog = doReg(docRecogExePath, docRecogIdCardIniPath, strFilePath, docRecogSoPath);
-                    }
-                    // 수재보험료 분리 insurDocCode
-                    else if(insurDocCode.contains(DocList.get(0).get("imageDocCode"))) {
-                        //docRecogIdCardIniPath
-                        LOGGER.info("[reqDocRead] 수재보험료 인식 호출, ini file : " + docRecogInsurIniPath);
-                        rtnDocRecog = doReg(docRecogExePath, docRecogInsurIniPath, strFilePath, docRecogSoPath);
-                    }
-                    // 법무비용입증자료 분리 legalfeeDocCode
-                    else if(legalfeeDocCode.contains(DocList.get(0).get("imageDocCode"))) {
-                        //docRecogIdCardIniPath
-                        LOGGER.info("[reqDocRead] 법무비용입증자료 인식 호출, ini file : " + docRecogLegalFeeIniPath);
-                        rtnDocRecog = doReg(docRecogExePath, docRecogLegalFeeIniPath, strFilePath, docRecogSoPath);
-                    }
-                    // 보험금청구서, 담보제공명령, 소장 분리 law2DocCode
-                    else if(law2DocCode.contains(DocList.get(0).get("imageDocCode"))) {
-                        LOGGER.info("[reqDocRead] 보험금청구서, 담보제공명령, 소장 인식 호출, ini file : " + docRecogLaw2IniPath);
-                        rtnDocRecog = doReg(docRecogExePath, docRecogLaw2IniPath, strFilePath, docRecogSoPath);
-                    }
-                    // 사업자등록증, 표준임대차계약서 분리 rentDocCode
-                    else if(rentDocCode.contains(DocList.get(0).get("imageDocCode"))) {
-                        LOGGER.info("[reqDocRead] 사업자등록증, 표준임대차계약서 인식 호출, ini file : " + docRecogRentIniPath);
-                        rtnDocRecog = doReg(docRecogExePath, docRecogRentIniPath, strFilePath, docRecogSoPath);
-                    }
-                    // 자격증 분리 licenseDocCode
-                    else if(licenseDocCode.contains(DocList.get(0).get("imageDocCode"))) {
-                        LOGGER.info("[reqDocRead] 자격증 인식 호출, ini file : " + docRecogLicenseIniPath);
-                        rtnDocRecog = doReg(docRecogExePath, docRecogLicenseIniPath, strFilePath, docRecogSoPath);
-                    }
-                    else {
-                        LOGGER.info("[reqDocRead] 기타문서 인식 호출, ini file : " + docRecogIniPath);
-                        rtnDocRecog = doReg(docRecogExePath, docRecogIniPath, strFilePath, docRecogSoPath);
-                    }
-                    */
                     LOGGER.info("[reqDocRead] DocRecog 인식 완료");
 
                     if ("dev".equals("dev")) {
-                        //ReqDoc.get("filePath") DocList.get(0).get("imageDocCode")
                         LOGGER.info("[reqDocRead] DocRecog 인식 완료 rtnDocRecog ===> " + DocList.get(0).get("filePath") + ", rtn ===> " + rtnDocRecog);
                     }
 
@@ -222,23 +169,9 @@ public class App {
                             Integer nNowPage = 0;
                             Integer nImagePage = 0;
 
-							/*
-							for(Map<String, String> ReqDoc : DocList) {
-								strImageId = ReqDoc.get("imageId");
-								nImagePage = Integer.parseInt(ReqDoc.get("imageCnt"));
-								if(nNowPage <= nImagePage) {
-									break;
-								}
-								else {
-									nNowPage = nNowPage - nImagePage;
-								}
-							}
-							*/
-
                             JSONObject jsonItem = jsonobject.getJSONObject("page" + Integer.toString(i));
 
                             int nvaluecnt = jsonItem.getInt("text_count");
-
 
                             if (nvaluecnt > 0) {
                                 JSONObject jsonValue = jsonItem.getJSONObject("value");
@@ -1252,44 +1185,6 @@ public class App {
 
                                             tmpMapRecog.put("docType", stridCode);
 
-											/*
-											if("SGI0030".equals(stridCode)) {
-												tmpVal="";
-												tmpPos=""+","+""+","+""+","+""+","+""+","+"";
-												strImageId="";
-												nNowPage=-1;
-											}
-											else {
-												itemcnt++;
-
-												// 이미지 id, 좌표값 분리
-												tmpOrgVal = jsonValue.getString(Integer.toString(itemcnt));
-												// 마지막 | 제거
-												tmpOrgVal = tmpOrgVal.substring(0, tmpOrgVal.length()-1);
-
-												//split
-												tmpOrgList = tmpOrgVal.split("[|]");
-												tmpVal = "";
-												tmpPos = "";
-												if("".equals(tmpOrgList[0]) || "NoValue".equals(tmpOrgList[0])) {
-													nErrCnt++;
-													tmpVal="";
-													tmpPos=""+","+""+","+""+","+""+","+""+","+"";
-													strImageId="";
-													nNowPage=-1;
-												}
-												else
-												{
-													nRegocCnt++;
-													// 0:인식값, 1:이미지page, 2:top, 3:left, 4:bottom, 5:right
-													tmpVal=tmpOrgList[0];
-													tmpPos=tmpOrgList[2]+","+tmpOrgList[3]+","+tmpOrgList[4]+","+tmpOrgList[5];
-
-													nNowPage = Integer.parseInt(tmpOrgList[1])+1;
-												}
-											}
-											*/
-
                                             itemcnt++;
 
                                             // 이미지 id, 좌표값 분리
@@ -1925,70 +1820,6 @@ public class App {
                                                 }
 
                                                 nocrCol++;
-
-												/*
-												for(int k=0;k<nSectionCnt;k++) {
-
-													itemcnt++;
-													nDescIdx++;
-													if(nDescIdx>nSectionCnt) {
-														nDescIdx=1;
-														nocrCol++;
-													}
-													//금액
-													tmpMapRecog = new HashMap<String, Object>();
-
-													tmpMapRecog.put("docType",stridCode);
-
-													// 이미지 id, 좌표값 분리
-													tmpOrgVal = jsonValue.getString(Integer.toString(itemcnt));
-													// 마지막 | 제거
-													tmpOrgVal = tmpOrgVal.substring(0, tmpOrgVal.length()-1);
-													//split
-													tmpOrgList = tmpOrgVal.split("[|]");
-													tmpVal = "";
-													tmpPos = "";
-													if("".equals(tmpOrgList[0]) || "NoValue".equals(tmpOrgList[0])) {
-														nErrCnt++;
-														tmpVal="";
-														tmpPos=""+","+""+","+""+","+""+","+""+","+"";
-														strImageId="";
-														nNowPage=-1;
-													}
-													else
-													{
-														nRegocCnt++;
-														// 0:인식값, 1:이미지page, 2:top, 3:left, 4:bottom, 5:right
-														tmpVal=tmpOrgList[0];
-														tmpPos=tmpOrgList[2]+","+tmpOrgList[3]+","+tmpOrgList[4]+","+tmpOrgList[5];
-
-														nNowPage = Integer.parseInt(tmpOrgList[1])+1;
-
-														for(Map<String, String> ReqDoc : DocList) {
-															strImageId = ReqDoc.get("imageId");
-															nImagePage = Integer.parseInt(ReqDoc.get("imageCnt"));
-															if(nNowPage <= nImagePage) {
-																// 파일 dpi 정보 확인
-																// String imageDPI = getImageDPI(ReqDoc.get("filePath"));
-																// tmpPos = tmpPos + "," + imageDPI;
-																break;
-															}
-															else {
-																nNowPage = nNowPage - nImagePage;
-															}
-														}
-													}
-
-													tmpMapRecog.put("imageId", strImageId);										// IMAGE_ID
-													tmpMapRecog.put("imagePage", Integer.toString(nNowPage));					// IMAGE_PAGE
-													tmpMapRecog.put("ocrCol", Integer.toString(nocrCol));						// OCR컬럼(인식항목이름)
-													tmpMapRecog.put("ocrColIdx", Integer.toString(nDescIdx));					// OCR동일컬럼배열인덱스
-													tmpMapRecog.put("ocrColCnt", Integer.toString(nSectionCnt));						// OCR동일컬럼배열개수
-													tmpMapRecog.put("ocrOrgVal", tmpVal);										// OCR결과값
-													tmpMapRecog.put("ocrCoord", tmpPos);										// OCR좌표
-													tmpOcrProcData1.add(tmpMapRecog);
-												}
-												*/
                                             }
 
                                             // 금액 계산 끝나면 itemcnt값 반영
@@ -2009,30 +1840,6 @@ public class App {
                                                     testTemp.add(tmpOcrProcData1.get(RCount));
                                                 }
                                             }
-
-											/*
-											List<Map<String, Integer>> sliceIndexList = new ArrayList<>();
-											for(int ii = 0; ii < outterIterCount; ii++)
-											{
-												for(int j = 0; j < itemCount; j++)
-												{
-													Map<String, Integer> sliceIndex = new HashMap<String, Integer>();
-													sliceIndex.put("start", j * countPerItem + (ii * countPerPage));
-
-													int offset = countPerItem - ii * countPerPage > countPerPage ? countPerPage : countPerItem - ii * countPerPage;
-													sliceIndex.put("end", j * countPerItem + (ii * countPerPage) + (offset - 1));
-
-													sliceIndexList.add(sliceIndex);
-												}
-											}
-											for(Map<String, Integer> sliceIndex : sliceIndexList)
-											{
-												Integer startIndex = sliceIndex.get("start");
-												Integer endIndex = sliceIndex.get("end");
-												testTemp = tmpOcrProcData1.subList(startIndex, endIndex + 1);
-												testTemp2.addAll(testTemp);
-											}
-											*/
 
                                             OcrProcData.addAll(testTemp);
                                             testTemp.clear();
@@ -2372,7 +2179,6 @@ public class App {
                                             //tmpOcrProcData1.add(tmpMapRecog);
                                             OcrProcData.add(tmpMapRecog);
 
-
                                             // Outstanding Loss Reserve 처리
                                             // 제일 마지막항목에 금액이 있으면 Outstanding Loss Reserve 항목으로 추가
                                             itemcnt = itemcnt + 2;
@@ -2534,7 +2340,6 @@ public class App {
                                          * 7: 주택유형(다수)
                                          */
 
-
                                         String tmpOrgVal = jsonValue.getString(Integer.toString(itemcnt));
 
                                         if (itemcnt == 4 || itemcnt == 5 || itemcnt == 6 || itemcnt == 7) {
@@ -2565,7 +2370,6 @@ public class App {
                                                 String[] tmpOrgList = tmpOrgVal.split("[|]");
                                                 String tmpVal = "";
                                                 String tmpPos = "";
-
 
                                                 if ("".equals(tmpOrgList[0]) || "NoValue".equals(tmpOrgList[0])) {
                                                     nErrCnt++;
@@ -2699,7 +2503,6 @@ public class App {
                                          * 11: 소장내용(전체)
                                          */
 
-
                                         String tmpOrgVal = jsonValue.getString(Integer.toString(itemcnt));
 
                                         if (itemcnt == 5 || itemcnt == 6 || itemcnt == 7 || itemcnt == 8 || itemcnt == 9) {
@@ -2707,7 +2510,6 @@ public class App {
                                             if (tmpOrgVal.contains("NoValue")) {
                                                 continue;
                                             }
-
 
                                             JSONObject tmpjsonVal = jsonValue.getJSONObject(Integer.toString(itemcnt));
 
@@ -3146,7 +2948,8 @@ public class App {
                                                     && jsonValue.getString(Integer.toString(4)).contains("NoValue")
                                                     && jsonValue.getString(Integer.toString(5)).contains("NoValue")
                                                     && jsonValue.getString(Integer.toString(6)).contains("NoValue")
-                                                    && jsonValue.getString(Integer.toString(7)).contains("NoValue")) {
+                                                    && jsonValue.getString(Integer.toString(7)).contains("NoValue")
+                                                    && jsonValue.getString(Integer.toString(8)).contains("NoValue")) {
                                                 continue;
                                             }
                                         }
@@ -3173,7 +2976,7 @@ public class App {
                                         if ("".equals(tmpOrgList[0]) || "NoValue".equals(tmpOrgList[0])) {
                                             // 개인회생문서 첫페이지 (SGI0003) 7번째 항목 지원, 지법 처리
                                             // 담보제공명령(SGI0052) 14번째항목  지원, 지법 처리 추가 ->  -> 담보제공명령은 제외하고 인식기능 분리됨
-                                            if (!("SGI0003".equals(stridCode) && itemcnt == 7)) {
+                                            if (!("SGI0003".equals(stridCode) && (itemcnt == 7 || itemcnt == 8))) {
                                                 nErrCnt++;
                                             }
                                             tmpVal = "";
@@ -3183,7 +2986,7 @@ public class App {
                                         } else {
                                             // 개인회생문서 첫페이지 (SGI0003) 7번째 항목 지원, 지법 처리
                                             // 담보제공명령(SGI0052) 14번째항목  지원, 지법 처리 추가 ->  -> 담보제공명령은 제외하고 인식기능 분리됨
-                                            if (!("SGI0003".equals(stridCode) && itemcnt == 7)) {
+                                            if (!("SGI0003".equals(stridCode) && (itemcnt == 7 || itemcnt == 8))) {
                                                 nRegocCnt++;
                                             }
 
@@ -3208,7 +3011,7 @@ public class App {
                                                 if (nNowPage <= nImagePage) {
                                                     // 파일 dpi 정보 확인
                                                     // String imageDPI = getImageDPI(ReqDoc.get("filePath"));
-                                                    // tmpPos = tmpPos + "," + imageDPI;
+                                                    tmpPos = tmpPos + "," + "200,200";
                                                     break;
                                                 } else {
                                                     nNowPage = nNowPage - nImagePage;
@@ -3218,7 +3021,7 @@ public class App {
 
                                         // 개인회생문서 첫페이지 (SGI0003) 7번째 항목 지원, 지법 처리
                                         // 담보제공명령(SGI0052) 14번째항목  지원, 지법 처리 추가 -> 담보제공명령은 제외하고 인식기능 분리됨
-                                        if (("SGI0003".equals(stridCode) && itemcnt == 7)) {
+                                        if (("SGI0003".equals(stridCode) && (itemcnt == 7 || itemcnt == 8))) {
                                             if ("".equals(tmpVal)) {
                                                 continue;
                                             }
@@ -3226,22 +3029,6 @@ public class App {
                                             for (Map<String, Object> tmpmap : OcrProcData) {
                                                 if ("1".equals(tmpmap.get("ocrCol"))) {
                                                     tmpVal = tmpmap.get("ocrOrgVal").toString() + " " + tmpVal;
-
-													/*
-													String tmppos = tmpmap.get("ocrCoord").toString();
-
-													if(",,,,,".equals(tmppos)) {
-														tmppos = tmpOrgList[2]+","+tmpOrgList[3]+","+tmpOrgList[4]+","+tmpOrgList[5];
-													}
-
-													String[] tmpposList = tmppos.split(",");
-													if(Integer.parseInt(tmpposList[2]) >= Integer.parseInt(tmpOrgList[4])) {
-														tmpPos=tmpposList[0]+","+tmpposList[1]+","+tmpposList[2]+","+tmpOrgList[5]+","+tmpposList[4]+","+tmpposList[5];
-													}
-													else {
-														tmpPos=tmpposList[0]+","+tmpposList[1]+","+tmpOrgList[4]+","+tmpOrgList[5]+","+tmpposList[4]+","+tmpposList[5];
-													}
-													*/
 
                                                     tmpPos = tmpOrgList[2] + "," + tmpOrgList[3] + "," + tmpOrgList[4] + "," + tmpOrgList[5];
 
@@ -3301,21 +3088,6 @@ public class App {
                                             //tmpMapRecog.put("REG_DTTM", regDate.format(formatter));							// 등록시간
                                             OcrProcData.add(tmpMapRecog);
                                         }
-
-										/*
-										tmpMapRecog.put("imageId", strImageId);										// IMAGE_ID
-										tmpMapRecog.put("imagePage", Integer.toString(nNowPage));					// IMAGE_PAGE
-										tmpMapRecog.put("ocrCol", Integer.toString(itemcnt));						// OCR컬럼(인식항목이름)
-										tmpMapRecog.put("ocrColIdx", "1");											// OCR동일컬럼배열인덱스
-										tmpMapRecog.put("ocrColCnt", "1");											// OCR동일컬럼배열개수
-										tmpMapRecog.put("ocrOrgVal", tmpVal);										// OCR결과값
-										tmpMapRecog.put("ocrCoord", tmpPos);										// OCR좌표
-
-										//LocalDateTime regDate = LocalDateTime.now();
-										//tmpMapRecog.put("REG_DTTM", regDate.format(formatter));							// 등록시간
-										OcrProcData.add(tmpMapRecog);
-										*/
-
                                         //nRegocCnt++;
                                     }
                                 }
@@ -3379,14 +3151,6 @@ public class App {
                                     OcrProcData.addAll(tmpOcrProcData7);
                                     OcrProcData.addAll(tmpOcrProcData0);
                                 }
-
-								/*
-								if(bSGI0030Recog) {
-									OcrProcData.addAll(tmpOcrProcData1);
-									OcrProcData.addAll(tmpOcrProcData2);
-									OcrProcData.addAll(tmpOcrProcData3);
-								}
-								*/
                             }
                         }
                     }
