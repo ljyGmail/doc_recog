@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- 60초마다 설정 파일의 변경을 확인 하여 변경시 갱신 -->
+<configuration scan="true" scanPeriod="60 seconds">
+
+	<!--springProfile 태그를 사용하면 logback 설정파일에서 복수개의 프로파일을 설정할 수 있다.-->
+	<springProfile name="local">
+		<property resource="logback-local.properties"/>
+	</springProfile>
+	<springProfile name="dev">
+		<property resource="logback-dev.properties"/>
+	</springProfile>
+	<springProfile name="stage">
+		<property resource="logback-stage.properties"/>
+	</springProfile>
+	<springProfile name="prod1">
+		<property resource="logback-prod1.properties"/>
+	</springProfile>
+	<springProfile name="prod2">
+		<property resource="logback-prod2.properties"/>
+	</springProfile>
+	<springProfile name="dr">
+		<property resource="logback-dr.properties"/>
+	</springProfile>
+
+	<!--Environment 내의 프로퍼티들을 개별적으로 설정할 수도 있다.-->
+	<!-- springProperty scope="context" name="LOG_LEVEL" source="logging.level.root"/ -->
+
+	<!-- log level -->
+	<property name="LOG_LEVEL" value="${log.level}"/>
+	<property name="LOG_LEVEL_SQLTIMING" value="${log.level.sqltiming}"/>
+	<property name="LOG_LEVEL_RESULTSETTABLE" value="${log.level.resultsettable}"/>
+
+	<!-- log file path -->
+	<property name="LOG_PATH" value="${log.config.path}"/>
+
+	<!-- log file name -->
+	<property name="LOG_FILE_NAME" value="${log.config.filename}"/>
+
+	<!-- err log file name -->
+	<!-- <property name="ERR_LOG_FILE_NAME" value="err_log"/> -->
+
+	<!-- pattern -->
+	<property name="LOG_PATTERN" value="%d{HH:mm:ss.SSS , Asia/Seoul} [%thread] ${PID:-} [%-5level] [%logger{36}] - %m%n"/>
+
+	<!-- Console Appender -->
+	<appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
+		<encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+			<charset>UTF-8</charset>
+			<pattern>${LOG_PATTERN}</pattern>
+ 		</encoder>
+ 	</appender>
+
+ 	<appender name="ROLLFILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+ 		<file>${LOG_PATH}/${LOG_FILE_NAME}.log</file>
+ 		<encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+ 			<charset>UTF-8</charset>
+ 			<pattern>${LOG_PATTERN}</pattern>
+ 		</encoder>
+ 		<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+ 			<fileNamePattern>${LOG_PATH}/${LOG_FILE_NAME}.%d{YYYY-MM-dd}.log</fileNamePattern>
+ 			<!-- <timeBasedFileNamingAndTriggeringPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
+ 				<maxfileSize>10MB</maxfileSize>
+ 			</timeBasedFileNamingAndTriggeringPolicy> -->
+<!--  			<maxHistory>1GB</maxHistory> -->
+ 			<maxHistory>30</maxHistory>
+ 		</rollingPolicy>
+ 	</appender>
+
+
+	<!-- sql log 상세 설정: https://dejavuhyo.github.io/posts/spring-boot-logback/ -->
+	<logger name="jdbc" level="off"/>
+	<logger name="jdbc.sqlonly" level="off"/>
+	<logger name="jdbc.sqltiming" level="${LOG_LEVEL_SQLTIMING}"/>
+	<logger name="jdbc.audit" level="${LOG_LEVEL_SQLTIMING}"/>
+	<logger name="jdbc.resultset" level="off"/>
+	<logger name="jdbc.resultsettable" level="${LOG_LEVEL_RESULTSETTABLE}"/>
+	<logger name="jdbc.connection" level="off"/>
+
+	 <!-- root레벨 설정 -->
+	 <root level="${LOG_LEVEL}">
+		 <appender-ref ref="CONSOLE"/>
+		 <appender-ref ref="ROLLFILE"/>
+	 </root>
+ </configuration>
